@@ -1,0 +1,17 @@
+material apriltag_0/apriltag_0
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+
+      texture_unit
+      {
+        texture ../textures/apriltag_0.png
+        filtering none
+      }
+    }
+  }
+}

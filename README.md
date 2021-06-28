@@ -143,3 +143,7 @@ TURTLEBOT3_MODEL=burger roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 
 Si es la primera vez que lo cargan, tardara un poco ya que tiene que descargar los modelos del world, pueden probar con `turtlebot3_empty_world.launch` para comprobar que todo este bien sin tener que descargar los modelos.
+
+### Correr el demo de Gazebo con Apriltag
+
+Para correr el demo, seguir las instrucciones en el [apriltag_demo.md](https://github.com/stevendes/turtlebot3_spanish/blob/apriltag_sim/apriltag_demo.md)

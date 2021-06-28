@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version='1.6'>
+  <model name='apriltag_0'>
+    <static>true</static>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <visual name='apriltag_0_visual'>
+        <geometry>
+          <box>
+            <size>0.17 0.17 0.0005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://apriltag_0/materials/scripts/apriltag_0.material</uri>
+            <name>apriltag_0/apriltag_0</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -6,7 +6,7 @@ WS_PATH=$( cd ../.. && pwd )
 echo "Cargando la imagen $CONTAINER..."
 
 # Crear las carpetas de build y devel (esto evitara compilar cada vez que abras el docker)
-cd ../.. && mkdir -p build devel
+cd ../.. && mkdir -p build devel build_isolated devel_isolated
 
 xhost +local:docker
 docker run  --rm --gpus all --net=host --security-opt apparmor=unconfined -it \
@@ -17,4 +17,6 @@ docker run  --rm --gpus all --net=host --security-opt apparmor=unconfined -it \
 -v ${WS_PATH}/src:/pmr_ws/src:rw \
 -v ${WS_PATH}/build:/pmr_ws/build:rw \
 -v ${WS_PATH}/devel:/pmr_ws/devel:rw \
+-v ${WS_PATH}/build:/pmr_ws/build_isolated:rw \
+-v ${WS_PATH}/devel:/pmr_ws/devel_isolated:rw \
 ${CONTAINER} 
